@@ -1,15 +1,10 @@
 <template>
-  <div class="docs-page">
-    <Container>
+  <section class="py-20">
+    <CustomContainer>
       <slot />
-    </Container>
-  </div>
+    </CustomContainer>
+  </section>
 </template>
-
-<style scoped lang="ts">
-css({
-  '.docs-page': {
-    padding: '40px 0'
-  }
-})
-</style>
+<script setup lang="ts">
+import CustomContainer from "~/components/globals/CustomContainer.vue";
+</script>

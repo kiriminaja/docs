@@ -1,8 +1,6 @@
 <template>
   <div v-for="(developers, key) in grouped_developers" :key="key" class="mb-5 xl:mb-10">
-    <div class="xl:sticky xl:py-3.5 mb-3 xl:top-16 bg-white dark:bg-shade-900">
-      <h3 v-text="key" class="text-xl xl:text-2xl font-bold"></h3>
-    </div>
+      <h3 v-text="key" class="text-xl xl:text-2xl mb-3 font-bold"></h3>
     <div class="grid grid-cols-2 xl:grid-cols-6 gap-5 xl:gap-7">
       <div class="group" v-for="developer in developers" :key="developer.name">
         <div

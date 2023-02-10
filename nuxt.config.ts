@@ -4,5 +4,8 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'dark',
   },
+  css: [
+      '~/assets/main.css'
+  ],
   modules: ['@nuxtjs/tailwindcss']
 })

@@ -14,21 +14,16 @@ export default defineAppConfig({
       ]
     },
     header: {
-      fluid: true,
       logo: true,
       showLinkIcon: true,
       exclude: []
-    },
-    main: {
-      fluid: true,
     },
     footer: {
       credits: {
         icon: '',
         text: '© Powered by KiriminAja Tech',
         href: 'https://instagram.com/kiriminaja.it',
-      },
-      fluid: true
+      }
     }
   }
 })
