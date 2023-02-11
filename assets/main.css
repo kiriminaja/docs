@@ -98,12 +98,11 @@
     margin-bottom: 1.25rem;
 }
 
-.xl\:py-20 {
-    padding-bottom: 5rem;
-    padding-top: 5rem;
-}
-
 @media (min-width: 1280px) {
+    .py-20 {
+        padding-bottom: 5rem;
+        padding-top: 5rem;
+    }
     .xl\:grid-cols-5 {
         grid-template-columns: repeat(5, minmax(0, 1fr));
     }
