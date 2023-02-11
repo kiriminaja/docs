@@ -1,57 +1,22 @@
-# Docus Starter
+# KiriminAja Handbook
 
-Starter template for [Docus](https://docus.dev).
+This repository contains the documentation for API installations, features in the product and a complete guide on how we run the organization.
 
-## Clone
-
-Clone the repository (using `nuxi`):
-
-```bash
-npx nuxi init -t themes/docus
-```
-
-## Setup
-
-Install dependencies:
-
+## Installation
 ```bash
 yarn install
 ```
 
-## Development
-
+## Local Development
 ```bash
-yarn dev
+yarn start
 ```
 
-## Edge Side Rendering
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-Can be deployed to Vercel Functions, Netlify Functions, AWS, and most Node-compatible environments.
-
-Look at all the available presets [here](https://v3.nuxtjs.org/guide/deploy/presets).
-
+## Build
 ```bash
 yarn build
 ```
-
-## Static Generation
-
-Use the `generate` command to build your application.
-
-The HTML files will be generated in the .output/public directory and ready to be deployed to any static compatible hosting.
-
-```bash
-yarn generate
-```
-
-## Preview build
-
-You might want to preview the result of your build locally, to do so, run the following command:
-
-```bash
-yarn preview
-```
-
----
 
 For a detailed explanation of how things work, check out [Docus](https://docus.dev).
