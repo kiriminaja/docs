@@ -98,7 +98,7 @@
     margin-bottom: 1.25rem;
 }
 
-.py-20 {
+.xl\:py-20 {
     padding-bottom: 5rem;
     padding-top: 5rem;
 }
@@ -264,4 +264,10 @@ small {
 
 .text-primary-700 {
     color: #4B3886;
+}
+
+@media (max-width: 1279px) {
+    .block-hero .content .actions[data-v-618a4cea] {
+        flex-direction: row;
+    }
 }
