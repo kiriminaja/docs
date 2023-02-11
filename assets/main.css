@@ -270,6 +270,6 @@ small {
         flex-direction: row;
     }
 }
-.dark\:text-white {
+html.dark .dark\:text-white {
     color: #fff;
 }
