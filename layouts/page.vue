@@ -1,10 +1,7 @@
 <template>
   <section class="py-20">
-    <CustomContainer>
+    <Container>
       <slot />
-    </CustomContainer>
+    </Container>
   </section>
 </template>
-<script setup lang="ts">
-import CustomContainer from "~/components/globals/CustomContainer.vue";
-</script>
