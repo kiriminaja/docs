@@ -1,6 +1,6 @@
 export default defineAppConfig({
   docus: {
-    title: 'KiriminAja Developer',
+    title: 'Docs',
     description: 'Develop. Connect. Shipped. Tenang Pakai #KiriminAja',
     image: '/cover.png',
     socials: {
