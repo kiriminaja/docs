@@ -7,6 +7,11 @@ export default defineAppConfig({
       github: 'kiriminaja',
       instagram: 'kiriminaja.it'
     },
+    github: {
+      root: 'content',
+      edit: true,
+      contributors: false
+    },
     aside: {
       level: 1,
       exclude: [

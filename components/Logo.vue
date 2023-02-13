@@ -1,6 +1,6 @@
 <template>
   <svg width="141" height="40"
-       class="w-auto h-8 text-primary-700 dark:text-currentColor"
+       class="w-auto h-8 text-primary-700 dark:text-white"
        viewBox="0 0 442 127" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g clip-path="url(#clip0_203_22)">
       <path
