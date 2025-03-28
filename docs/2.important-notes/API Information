@@ -1,1 +1,3 @@
-
+:::info
+If our endpoint is down, you can use the pull tracking API to continue tracking your shipments. This alternative method allows you to request and retrieve tracking information directly, ensuring you stay updated on your shipment status even if our primary endpoint is temporarily unavailable.
+:::
