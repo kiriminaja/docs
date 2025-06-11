@@ -10,6 +10,10 @@ List of districts with direct search by Subdistrict name. We limit requests usin
 [GET] /api/mitra/v6.1/addresses
 ```
 
+:::warning
+The request must be sent via URL parameters (query params), not in the request body (raw body).
+:::
+
 ### Request
 
 | Field    | DataType       | Nullable | Desc                     |
