@@ -24,7 +24,7 @@ jobs:
       - name: Clone the main repository
         id: clone_repo
         run: |
-          git clone --recurse-submodules https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/kiriminaja/kaj-sandbox-web.git main-repo
+          git clone --recurse-submodules https://x-access-token:${{ secrets.SUBMODULE_TOKEN }}@github.com/kiriminaja/kaj-sandbox-web.git main-repo
           cd main-repo
           git config user.name "kiriminaja-tech"
           git config user.email "tech@kiriminaja.com"
@@ -36,5 +36,5 @@ jobs:
           git submodule update --force --remote --recursive
           git add content
           git commit -m "Update submodule to latest commit: ${{ env.SHA }}" || echo "No changes to commit"
-          git remote set-url origin https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/kiriminaja/kaj-sandbox-web.git
+          git remote set-url origin https://x-access-token:${{ secrets.SUBMODULE_TOKEN }}@github.com/kiriminaja/kaj-sandbox-web.git
           git push origin main
