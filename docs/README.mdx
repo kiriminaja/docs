@@ -2,28 +2,61 @@
 sidebar_position: 1
 ---
 
-# Overview
-KiriminAja Mitra API is our integration product that help you to enable Shipping features from check rates, create order, request pickup, until order tracking into your platform easily.  
+# KiriminAja Mitra API
 
-| Sandbox | Production |
-| ------ | ------ |
-| https://tdev.kiriminaja.com  | https://client.kiriminaja.com |
+KiriminAja Mitra API is our shipping integration product that lets your platform check rates, create orders, request pickups, and track deliveries — all through a single API.
 
-## Get Started
+| Environment | Base URL                      |
+| ----------- | ----------------------------- |
+| Sandbox     | https://tdev.kiriminaja.com   |
+| Production  | https://client.kiriminaja.com |
 
-Getting Started Using KiriminAja API Postman Collection.
-Postman collection is the easiest way to use the KiriminAja REST API. 
+## What You Can Build
 
-1. Install Postman if you haven’t installed it yet. For a more detailed guide install Postman, see "[Installing and Updating Postman](https://learning.postman.com/docs/getting-started/installation-and-updates/)"
-2. [Download KiriminAja Mitra API Postman Collection here](https://drive.google.com/drive/folders/1ZcqsQLdx9ZAGnKFBaw2It5dqOUbCQdht?usp=sharing).
-3. Import KiriminAja Logistic API Postman Collection to your Postman App.
-4. Use KiriminAja API Key to authenticate to KiriminAja Mitra API. For more information about step by step get KiriminAja API Key, see “[How to Get KiriminAja API Key](#how-to-get-kiriminaja-api-key)”
-5. Update value `api_key` on postman collection with API key generated on Sandbox Dashboard. 
+- **Check rates** — Compare shipping costs across 15+ couriers
+- **Create orders** — Generate AWB numbers for express and instant delivery
+- **Request pickups** — Schedule courier pickups from your location
+- **Track shipments** — Monitor delivery status via webhook or polling
+- **Manage payments** — Handle COD and non-COD payment flows
 
-## How to Get KiriminAja API Key
-1. Go to [this page](https://sandbox.kiriminaja.com/) and register for a Sandbox account. 
-2. Complete the registration process. 
-3. Login to [Sandbox Dashboard](https://sandbox.kiriminaja.com/login). 
-4. Waiting Approval. 
-5. Go to menu Integrasi and copy your API Key. 
+## Quick Start
 
+The fastest way to explore the API is through our Postman Collection.
+
+1. Install [Postman](https://learning.postman.com/docs/getting-started/installation-and-updates/)
+2. Download the [KiriminAja Mitra API Postman Collection](https://drive.google.com/drive/folders/1ZcqsQLdx9ZAGnKFBaw2It5dqOUbCQdht?usp=sharing)
+3. Import the collection into Postman
+4. Get your API Key (see below)
+5. Set the `api_key` variable in the collection to your Sandbox API key
+
+## How to Get Your API Key
+
+1. Register at the [Sandbox Dashboard](https://sandbox.kiriminaja.com/)
+2. Complete the registration form
+3. Log in to the [Sandbox Dashboard](https://sandbox.kiriminaja.com/login)
+4. Wait for account approval
+5. Go to **Integrasi** and copy your API Key
+
+## Authentication
+
+Include your API key in every request:
+
+| Header          | Value          |
+| --------------- | -------------- |
+| `Accept`        | application/json |
+| `Content-Type`  | application/json |
+| `Authorization` | Bearer `{api_key}` |
+
+## Available SDKs
+
+If you prefer not to call the REST API directly, we provide official SDKs:
+
+| Language   | Package                                                        |
+| ---------- | -------------------------------------------------------------- |
+| PHP        | [kiriminaja/kiriminaja-php](https://github.com/kiriminaja/php) |
+| Node.js    | [kiriminaja](https://github.com/kiriminaja/node)               |
+| Go         | [kiriminaja/go](https://github.com/kiriminaja/go)              |
+| Python     | [kiriminaja](https://pypi.org/project/kiriminaja/)             |
+| Ruby       | [kiriminaja](https://rubygems.org/gems/kiriminaja)             |
+
+See [SDK Availability](/docs/others/sdk-availability) for installation instructions and version details.
